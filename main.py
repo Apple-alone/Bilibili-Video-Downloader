@@ -1,4 +1,5 @@
 #如果有问题请联系我邮箱aotu013@163.com
+#本程序不可用于非法活动
 
 import json
 import re
@@ -9,12 +10,12 @@ from tqdm import tqdm
 
 import os
 
-pathname = "Bilibili Video"
-path = r"C:\\Users\Administrator\Desktop"
-os.chdir(path)
+desktop_path = os.path.expanduser("~/Desktop")
+folder_name = "Bilibili Video"
+folder_path = os.path.join(desktop_path, folder_name)
 
-if not os.path.exists(pathname):
-    os.makedirs(pathname)
+if not os.path.exists(folder_name):
+    os.makedirs(folder_name)
     print("视频将保存在桌面上的Bilibili Video文件夹中")
 else:
     print("已发现桌面已有Bilibili Video文件夹，不再创建该文件夹")

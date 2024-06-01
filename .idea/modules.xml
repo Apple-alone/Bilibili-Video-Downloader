@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Bilibili Video Download.iml" filepath="$PROJECT_DIR$/.idea/Bilibili Video Download.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Bilibili Video Downloader.iml" filepath="$PROJECT_DIR$/.idea/Bilibili Video Downloader.iml" />
     </modules>
   </component>
 </project>

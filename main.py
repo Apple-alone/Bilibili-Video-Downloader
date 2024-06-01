@@ -10,6 +10,12 @@ from tqdm import tqdm
 
 import os
 
+print("Made by Apple-alone")
+print("Apple-alone's email aotu013@163.com")
+print("Follow My Github: https://github.com/Apple-alone")
+print("不要多次使用本软件")
+print("不能下载番剧（悲）")
+
 desktop_path = os.path.expanduser("~/Desktop")
 folder_name = "Bilibili Video"
 folder_path = os.path.join(desktop_path, folder_name)
@@ -18,8 +24,7 @@ if not os.path.exists(folder_name):
     os.makedirs(folder_name)
     print("视频将保存在桌面上的Bilibili Video文件夹中")
 else:
-    print("已发现桌面已有Bilibili Video文件夹，不再创建该文件夹")
-
+    print("已发现桌面已有Bilibili Video文件夹，不再创建该文件夹，并自动下载到该文件夹中")
 BilibiliVideo = input("请输入哔哩哔哩视频链接：")
 url = BilibiliVideo
 def get_response(html_url,stream=False):
@@ -53,7 +58,7 @@ def get_url(html_url):
 
 def save(video_url,video_size,title):
     video_res = get_response(video_url, True)
-    print("-----------------"+video_url)
+    print("（Made by Apple-alone）已获得视频下载链接"+video_url)
     with open(r"C:\\Users\Administrator\Desktop\Bilibili Video\\" + title + ".mp4","wb")as fd:
         for c in tqdm(iterable=video_res.iter_content(),total=video_size,unit="b",desc=None):
             fd.write(c)
